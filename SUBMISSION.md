@@ -8,12 +8,12 @@
 
 ## 🔗 Ключевые ссылки для проверки
 
-1. **Исходный код проекта (GitHub)**: [https://github.com/potapenko/nutricheck](https://github.com/potapenko/nutricheck)  
+1. **Исходный код проекта (GitHub)**: [https://github.com/ostrowsky/Nutricheck](https://github.com/ostrowsky/Nutricheck)  
    *(Все исходные коды, тесты, Dockerfile и документация упакованы в одну структуру)*
-2. **Задача 1: Развернутая веб-утилита**: [https://potapenko.github.io/nutricheck/](https://potapenko.github.io/nutricheck/)  
-   *(Работает полностью на стороне клиента, адаптивна под мобильные устройства)*
-3. **Задача 3: Демонстрационная Google Таблица**: [https://docs.google.com/spreadsheets/d/1X50K_81_6o0B_kX8u934-J4J68x12B_tS-kS8u934-J4/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1X50K_81_6o0B_kX8u934-J4J68x12B_tS-kS8u934-J4/edit?usp=sharing)  
-   *(Свободный доступ для просмотра. Код Apps Script привязан к таблице)*
+2. **Задача 1: Веб-утилита**: запускается локально командой `node server.js` в папке `task1-web/`, открывается на [http://localhost:3000](http://localhost:3000)  
+   *(Работает полностью на стороне клиента; может быть опубликована через GitHub Pages)*
+3. **Задача 3: Google Таблица + Apps Script**: разворачивается по инструкции в `task3-apps-script/README.md` (код — в `task3-apps-script/Code.gs`)  
+   *(Apps Script привязывается к вашей таблице за пару минут)*
 
 ---
 
