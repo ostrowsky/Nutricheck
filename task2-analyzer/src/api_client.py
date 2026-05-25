@@ -34,7 +34,8 @@ class FoodSearchAPI:
             'search_simple': '1',
             'action': 'process',
             'json': '1',
-            'page_size': '1', # Нам нужен только первый самый подходящий результат
+            'page_size': '20', # Берём пул кандидатов и выбираем запись с заполненным составом
+            'sort_by': 'unique_scans_n', # Популярные товары имеют более полные данные
             'fields': 'product_name,brands,nutriments,code'
         }
 
@@ -54,7 +55,22 @@ class FoodSearchAPI:
                         self.cache[query.lower()] = None
                         return None
 
-                    raw_product = data['products'][0]
+                    # Первый результат поиска часто оказывается записью без данных о пищевой
+                    # ценности — выбираем первого кандидата с заполненными калориями/макросами
+                    raw_product = None
+                    for cand in data['products']:
+                        n = cand.get('nutriments', {})
+                        has_cal = float(n.get('energy-kcal_100g', 0) or 0) > 0
+                        has_macros = (float(n.get('proteins_100g', 0) or 0) > 0 or
+                                      float(n.get('carbohydrates_100g', 0) or 0) > 0)
+                        if has_cal or has_macros:
+                            raw_product = cand
+                            break
+
+                    if raw_product is None:
+                        self.cache[query.lower()] = None
+                        return None
+
                     nutriments = raw_product.get('nutriments', {})
 
                     # Собираем и конвертируем данные (г -> мг/мкг)
