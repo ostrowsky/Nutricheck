@@ -1,0 +1,739 @@
+{
+  "user": {
+    "gender": "male",
+    "age": 32,
+    "activity": "moderate"
+  },
+  "daily_log": [
+    {
+      "date": "Сегодня",
+      "items": [
+        {
+          "name": "Куриная грудка",
+          "brand": "Милти",
+          "amount_g": 200.0,
+          "nutrients": {
+            "calories": 171.0,
+            "protein": 7.6,
+            "fat": 12.3,
+            "carbs": 7.4,
+            "fiber": 0.0,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 0.0
+          }
+        },
+        {
+          "name": "Гречка отварная",
+          "brand": "Ашан",
+          "amount_g": 150.0,
+          "nutrients": {
+            "calories": 0.0,
+            "protein": 0.0,
+            "fat": 0.0,
+            "carbs": 0.0,
+            "fiber": 0.0,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 0.0
+          }
+        },
+        {
+          "name": "Апельсин",
+          "brand": "Добрый",
+          "amount_g": 180.0,
+          "nutrients": {
+            "calories": 42.0,
+            "protein": 0.0,
+            "fat": 0.0,
+            "carbs": 10.5,
+            "fiber": 0.0,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 0.0
+          }
+        },
+        {
+          "name": "Морковь",
+          "brand": "Традиции Вкуса",
+          "amount_g": 100.0,
+          "nutrients": {
+            "calories": 60.0,
+            "protein": 1.1,
+            "fat": 3.4,
+            "carbs": 5.3,
+            "fiber": 0.0,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 0.0
+          }
+        },
+        {
+          "name": "Яйцо вареное",
+          "brand": "Собственное производство / Бренд не указан",
+          "amount_g": 120.0,
+          "nutrients": {
+            "calories": 161.775,
+            "protein": 12.7,
+            "fat": 11.5,
+            "carbs": 0.7,
+            "fiber": 0.0,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 0.0
+          }
+        },
+        {
+          "name": "Миндаль",
+          "brand": "Alpen Hilda",
+          "amount_g": 30.0,
+          "nutrients": {
+            "calories": 543.75,
+            "protein": 5.625,
+            "fat": 30.625,
+            "carbs": 59.375,
+            "fiber": 1.875,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 312.5
+          }
+        },
+        {
+          "name": "Темный шоколад",
+          "brand": "Світоч",
+          "amount_g": 50.0,
+          "nutrients": {
+            "calories": 511.0,
+            "protein": 6.6,
+            "fat": 29.0,
+            "carbs": 52.0,
+            "fiber": 6.8,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 146.0
+          }
+        },
+        {
+          "name": "Творог 9%",
+          "brand": "Ehrmann",
+          "amount_g": 150.0,
+          "nutrients": {
+            "calories": 53.2982791586997,
+            "protein": 9.3,
+            "fat": 0.2,
+            "carbs": 3.8,
+            "fiber": 0.0,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 0.1
+          }
+        },
+        {
+          "name": "Шпинат",
+          "brand": "ТЛМ Трейд",
+          "amount_g": 50.0,
+          "nutrients": {
+            "calories": 0.0,
+            "protein": 0.0,
+            "fat": 0.0,
+            "carbs": 0.0,
+            "fiber": 0.0,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 0.0
+          }
+        },
+        {
+          "name": "Банан",
+          "brand": "Solevita",
+          "amount_g": 120.0,
+          "nutrients": {
+            "calories": 46.0,
+            "protein": 0.5,
+            "fat": 0.5,
+            "carbs": 10.9,
+            "fiber": 0.4,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 8.0
+          }
+        },
+        {
+          "name": "Сыр Пармезан",
+          "brand": "Belster",
+          "amount_g": 30.0,
+          "nutrients": {
+            "calories": 372.0,
+            "protein": 30.0,
+            "fat": 28.0,
+            "carbs": 0.0,
+            "fiber": 0.0,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 1080.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 0.0
+          }
+        },
+        {
+          "name": "Болгарский перец",
+          "brand": "№1",
+          "amount_g": 100.0,
+          "nutrients": {
+            "calories": 101.0,
+            "protein": 1.29999995231628,
+            "fat": 4.40000009536743,
+            "carbs": 12.6999998092651,
+            "fiber": 0.0,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 0.0
+          }
+        },
+        {
+          "name": "Печень трески",
+          "brand": "Собственное производство / Бренд не указан",
+          "amount_g": 20.0,
+          "nutrients": {
+            "calories": 0.0,
+            "protein": 0.0,
+            "fat": 0.0,
+            "carbs": 0.0,
+            "fiber": 0.0,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 0.0
+          }
+        },
+        {
+          "name": "Грибы шампиньоны",
+          "brand": "Чистая грядка,ЛОГАЛ-БИО",
+          "amount_g": 100.0,
+          "nutrients": {
+            "calories": 27.0,
+            "protein": 4.3,
+            "fat": 1.0,
+            "carbs": 0.1,
+            "fiber": 0.0,
+            "vitamin_a": 0.0,
+            "vitamin_c": 7.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 0.0
+          }
+        },
+        {
+          "name": "Куриное яйцо",
+          "brand": "Синявинское",
+          "amount_g": 60.0,
+          "nutrients": {
+            "calories": 153.0,
+            "protein": 13.6,
+            "fat": 10.9,
+            "carbs": 0.0,
+            "fiber": 0.0,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 0.0
+          }
+        },
+        {
+          "name": "Овсяная каша",
+          "brand": "Ясно солнышко",
+          "amount_g": 150.0,
+          "nutrients": {
+            "calories": 0.0,
+            "protein": 0.0,
+            "fat": 0.0,
+            "carbs": 0.0,
+            "fiber": 0.0,
+            "vitamin_a": 0.0,
+            "vitamin_c": 0.0,
+            "vitamin_d": 0.0,
+            "vitamin_e": 0.0,
+            "vitamin_k": 0.0,
+            "vitamin_b1": 0.0,
+            "vitamin_b2": 0.0,
+            "vitamin_b6": 0.0,
+            "vitamin_b12": 0.0,
+            "folate": 0.0,
+            "calcium": 0.0,
+            "iron": 0.0,
+            "magnesium": 0.0,
+            "zinc": 0.0,
+            "potassium": 0.0,
+            "sodium": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "analysis": {
+    "diet_score": 2,
+    "coverage": {
+      "calories": {
+        "consumed": 1556.9,
+        "norm": 2500.0,
+        "percent": 62
+      },
+      "protein": {
+        "consumed": 73.8,
+        "norm": 65.0,
+        "percent": 113
+      },
+      "fat": {
+        "consumed": 86.7,
+        "norm": 80.0,
+        "percent": 108
+      },
+      "carbs": {
+        "consumed": 115.2,
+        "norm": 350.0,
+        "percent": 32
+      },
+      "fiber": {
+        "consumed": 4.4,
+        "norm": 35.0,
+        "percent": 12
+      },
+      "vitamin_a": {
+        "consumed": 0.0,
+        "norm": 900.0,
+        "percent": 0
+      },
+      "vitamin_c": {
+        "consumed": 7.0,
+        "norm": 90.0,
+        "percent": 7
+      },
+      "vitamin_d": {
+        "consumed": 0.0,
+        "norm": 15.0,
+        "percent": 0
+      },
+      "vitamin_e": {
+        "consumed": 0.0,
+        "norm": 15.0,
+        "percent": 0
+      },
+      "vitamin_k": {
+        "consumed": 0.0,
+        "norm": 120.0,
+        "percent": 0
+      },
+      "vitamin_b1": {
+        "consumed": 0.0,
+        "norm": 1.2,
+        "percent": 0
+      },
+      "vitamin_b2": {
+        "consumed": 0.0,
+        "norm": 1.3,
+        "percent": 0
+      },
+      "vitamin_b6": {
+        "consumed": 0.0,
+        "norm": 1.3,
+        "percent": 0
+      },
+      "vitamin_b12": {
+        "consumed": 0.0,
+        "norm": 2.4,
+        "percent": 0
+      },
+      "folate": {
+        "consumed": 0.0,
+        "norm": 400.0,
+        "percent": 0
+      },
+      "calcium": {
+        "consumed": 324.0,
+        "norm": 1000.0,
+        "percent": 32
+      },
+      "iron": {
+        "consumed": 0.0,
+        "norm": 8.0,
+        "percent": 0
+      },
+      "magnesium": {
+        "consumed": 0.0,
+        "norm": 400.0,
+        "percent": 0
+      },
+      "zinc": {
+        "consumed": 0.0,
+        "norm": 11.0,
+        "percent": 0
+      },
+      "potassium": {
+        "consumed": 0.0,
+        "norm": 3400.0,
+        "percent": 0
+      },
+      "sodium": {
+        "consumed": 176.5,
+        "norm": 2300.0,
+        "percent": 7
+      }
+    },
+    "deficits": [
+      "vitamin_a",
+      "vitamin_d",
+      "vitamin_e",
+      "vitamin_k",
+      "vitamin_b1",
+      "vitamin_b2",
+      "vitamin_b6",
+      "vitamin_b12",
+      "folate",
+      "iron",
+      "magnesium",
+      "zinc",
+      "potassium",
+      "vitamin_c",
+      "calcium"
+    ],
+    "recommendations": [
+      {
+        "nutrient": "vitamin_a",
+        "foods": [
+          "Морковь",
+          "Батат",
+          "Шпинат",
+          "Печень трески",
+          "Яйца"
+        ]
+      },
+      {
+        "nutrient": "vitamin_d",
+        "foods": [
+          "Печень трески",
+          "Жирная рыба (лосось)",
+          "Яичный желток",
+          "Грибы"
+        ]
+      },
+      {
+        "nutrient": "vitamin_e",
+        "foods": [
+          "Миндаль",
+          "Подсолнечное масло",
+          "Авокадо",
+          "Семечки",
+          "Шпинат"
+        ]
+      },
+      {
+        "nutrient": "vitamin_k",
+        "foods": [
+          "Кейл",
+          "Шпинат",
+          "Брокколи",
+          "Петрушка",
+          "Брюссельская капуста"
+        ]
+      },
+      {
+        "nutrient": "vitamin_b1",
+        "foods": [
+          "Кедровые орехи",
+          "Бурый рис",
+          "Свинина",
+          "Овсянка",
+          "Чечевица"
+        ]
+      },
+      {
+        "nutrient": "vitamin_b2",
+        "foods": [
+          "Печень",
+          "Яйца",
+          "Творог",
+          "Миндаль",
+          "Шампиньоны"
+        ]
+      },
+      {
+        "nutrient": "vitamin_b6",
+        "foods": [
+          "Фисташки",
+          "Чеснок",
+          "Бананы",
+          "Тунец",
+          "Куриная грудка"
+        ]
+      },
+      {
+        "nutrient": "vitamin_b12",
+        "foods": [
+          "Субпродукты (печень)",
+          "Скумбрия",
+          "Говядина",
+          "Мидии",
+          "Творог"
+        ]
+      },
+      {
+        "nutrient": "folate",
+        "foods": [
+          "Шпинат",
+          "Спаржа",
+          "Печень",
+          "Бобовые",
+          "Брокколи"
+        ]
+      },
+      {
+        "nutrient": "iron",
+        "foods": [
+          "Свиная/говяжья печень",
+          "Моллюски",
+          "Чечевица",
+          "Тыквенные семечки"
+        ]
+      },
+      {
+        "nutrient": "magnesium",
+        "foods": [
+          "Кешью",
+          "Тыквенные семечки",
+          "Темный шоколад",
+          "Гречка",
+          "Шпинат"
+        ]
+      },
+      {
+        "nutrient": "zinc",
+        "foods": [
+          "Устрицы",
+          "Тыквенные семечки",
+          "Говядина",
+          "Кешью",
+          "Чечевица"
+        ]
+      },
+      {
+        "nutrient": "potassium",
+        "foods": [
+          "Курага",
+          "Картофель",
+          "Бананы",
+          "Шпинат",
+          "Авокадо"
+        ]
+      },
+      {
+        "nutrient": "vitamin_c",
+        "foods": [
+          "Болгарский перец",
+          "Киви",
+          "Цитрусовые",
+          "Брокколи",
+          "Шиповник"
+        ]
+      },
+      {
+        "nutrient": "calcium",
+        "foods": [
+          "Пармезан (и сыры)",
+          "Кунжут",
+          "Мак",
+          "Творог",
+          "Петрушка"
+        ]
+      }
+    ]
+  }
+}

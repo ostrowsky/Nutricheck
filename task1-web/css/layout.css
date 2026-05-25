@@ -1,0 +1,422 @@
+/* ============================================================
+   NutriCheck — Layout (Сетка страницы, header, секции)
+   ============================================================ */
+
+/* ── Шапка ── */
+.header {
+  padding: var(--space-xl) 0;
+  border-bottom: 1px solid var(--glass-border);
+  margin-bottom: var(--space-2xl);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.logo-icon {
+  font-size: var(--font-size-3xl);
+}
+
+.logo-text {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--color-good), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo-sub {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  font-weight: 400;
+  display: block;
+  margin-top: -4px;
+}
+
+/* ── Профиль пользователя (пол, возраст, активность) ── */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.user-profile .form-group {
+  min-width: 120px;
+}
+
+/* ── Главная сетка ── */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+/* ── Секция ввода продуктов (левая колонка) ── */
+.input-section {
+  grid-column: 1;
+}
+
+/* ── Секция результатов (правая колонка) ── */
+.results-section {
+  grid-column: 2;
+}
+
+/* ── Блок поиска ── */
+.search-wrapper {
+  position: relative;
+  margin-bottom: var(--space-md);
+}
+
+.search-icon {
+  position: absolute;
+  left: var(--space-md);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: var(--font-size-lg);
+  pointer-events: none;
+}
+
+.search-input {
+  padding-left: 44px !important;
+}
+
+/* Выпадающий список результатов поиска */
+.search-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--bg-secondary);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 50;
+  display: none;
+  box-shadow: var(--glass-shadow);
+}
+
+.search-dropdown.active {
+  display: block;
+  animation: dropdownFadeIn 0.2s ease;
+}
+
+@keyframes dropdownFadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.search-item {
+  padding: var(--space-sm) var(--space-md);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.search-item:last-child {
+  border-bottom: none;
+}
+
+.search-item:hover {
+  background: var(--bg-tertiary);
+}
+
+.search-item-name {
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+}
+
+.search-item-brand {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+.search-item-calories {
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+/* ── Список добавленных продуктов ── */
+.food-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.food-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--glass-border);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.food-item-info {
+  flex: 1;
+}
+
+.food-item-name {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.food-item-meta {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+.food-item-amount {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.food-item-amount input {
+  width: 60px;
+  padding: 2px var(--space-xs);
+  background: var(--bg-secondary);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-xs);
+  text-align: center;
+  outline: none;
+}
+
+.food-item-amount input:focus {
+  border-color: var(--color-accent);
+}
+
+.food-item-amount span {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+.food-item-remove {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: var(--space-xs);
+  font-size: var(--font-size-lg);
+  transition: color var(--transition-fast);
+  line-height: 1;
+}
+
+.food-item-remove:hover {
+  color: var(--color-bad);
+}
+
+/* ── Секция с радарной диаграммой ── */
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-md);
+}
+
+.chart-container canvas {
+  max-width: 100%;
+}
+
+/* ── Секция с прогресс-барами нутриентов ── */
+.nutrients-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.nutrient-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.nutrient-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nutrient-name {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.nutrient-name .icon {
+  font-size: var(--font-size-base);
+}
+
+.nutrient-value {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+.nutrient-percent {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+/* ── Рекомендации ── */
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.recommendation-card {
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  border-left: 3px solid var(--color-bad);
+  transition: transform var(--transition-base);
+}
+
+.recommendation-card:hover {
+  transform: translateX(4px);
+}
+
+.recommendation-card.moderate {
+  border-left-color: var(--color-moderate);
+}
+
+.recommendation-nutrient {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.recommendation-text {
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.recommendation-foods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+
+.recommendation-food-tag {
+  background: var(--color-accent-bg);
+  color: var(--color-accent);
+  padding: 2px var(--space-sm);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+}
+
+/* ── Footer ── */
+.footer {
+  text-align: center;
+  padding: var(--space-xl) 0;
+  border-top: 1px solid var(--glass-border);
+  margin-top: var(--space-3xl);
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+}
+
+/* ── Импорт секция ── */
+.import-section {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.import-btn {
+  flex: 1;
+}
+
+/* ── Empty State ── */
+.empty-state {
+  text-align: center;
+  padding: var(--space-3xl) var(--space-lg);
+  color: var(--text-muted);
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+  opacity: 0.5;
+}
+
+.empty-state-text {
+  font-size: var(--font-size-sm);
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .results-section {
+    grid-column: 1;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-profile {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .card {
+    padding: var(--space-md);
+  }
+
+  .recommendations-grid {
+    grid-template-columns: 1fr;
+  }
+}

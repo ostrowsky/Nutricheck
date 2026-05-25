@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriCheck Web — Автотесты</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #0a0e17;
+      color: #f0f4f8;
+      padding: 40px var(--space-lg);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .container {
+      background: rgba(17, 24, 39, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #22c55e, #6366f1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #6366f1;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🥗 NutriCheck Web — Панель Автотестов</h1>
+    
+    <div id="testOutput">⏳ Выполнение тестов...</div>
+    
+    <a href="index.html" class="back-link">← Вернуться к приложению</a>
+  </div>
+
+  <!-- Подключаем логику приложения -->
+  <script src="js/data/rda-norms.js"></script>
+  <script src="js/data/nutrient-meta.js"></script>
+  <script src="js/calc/nutrient-calc.js"></script>
+  <script src="js/calc/recommendations.js"></script>
+
+  <!-- Подключаем тесты и раннер -->
+  <script src="js/calc/nutrient-calc.test.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const output = document.getElementById('testOutput');
+      // Запускаем тесты через наш раннер
+      JSUnitTests.run(output);
+    });
+  </script>
+</body>
+</html>
