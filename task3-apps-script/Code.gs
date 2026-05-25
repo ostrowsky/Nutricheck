@@ -131,9 +131,9 @@ function enrichAllRows() {
  * Запрашивает API Open Food Facts и извлекает нутриенты продукта
  */
 function fetchProductFromAPI(productName) {
-  // Русскоязычная база даёт релевантные совпадения для русских названий,
-  // сортировка по популярности (unique_scans_n) поднимает товары с полным составом.
-  const url = 'https://ru.openfoodfacts.org/cgi/search.pl?search_terms=' +
+  // Глобальная база содержит брендовые товары с заполненным составом (включая витамины/минералы);
+  // сортировка по популярности (unique_scans_n) поднимает записи с наиболее полными данными.
+  const url = 'https://world.openfoodfacts.org/cgi/search.pl?search_terms=' +
               encodeURIComponent(productName) +
               '&search_simple=1&action=process&json=1&page_size=20' +
               '&sort_by=unique_scans_n' +
