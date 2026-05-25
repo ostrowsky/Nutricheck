@@ -12,9 +12,14 @@ class CSVExporter:
         """
         nutrients = calculated_data['nutrients']
 
-        with open(file_path, 'w', encoding='utf-8', newline='') as f:
+        # Десятичная запятая, чтобы Excel в русской локали не принимал числа за даты (25.8 -> 25 авг)
+        def ru_num(value):
+            return str(value).replace('.', ',')
+
+        # utf-8-sig добавляет BOM — иначе русский Excel открывает CSV в Windows-1251 (кракозябры)
+        with open(file_path, 'w', encoding='utf-8-sig', newline='') as f:
             writer = csv.writer(f, delimiter=';')
-            
+
             # Заголовки
             writer.writerow(['Ключ Нутриента', 'Название нутриента', 'Потреблено', 'Норма RDA', 'Единица измерения', '% Покрытия', 'Статус'])
 
@@ -22,8 +27,8 @@ class CSVExporter:
                 writer.writerow([
                     key,
                     val['name'],
-                    val['consumed'],
-                    val['norm'],
+                    ru_num(val['consumed']),
+                    ru_num(val['norm']),
                     val['unit'],
                     val['percent'],
                     val['status']
