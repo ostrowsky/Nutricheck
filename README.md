@@ -63,6 +63,7 @@ Web Dashboard / Browser UI
 ```text
 http://localhost:3000
 ```
+<img width="1503" height="980" alt="image" src="https://github.com/user-attachments/assets/463b8566-5007-49ea-ae00-3849864a90b3" />
 
 ### 3.2 Google Sheets + Apps Script
 
@@ -80,6 +81,9 @@ https://docs.google.com/spreadsheets/d/1QASAQQY7Jhy2rEpzxLtznm8Dr1LAavk_X6plF2HZ
 - заполнение калорий, БЖУ, витаминов и минералов;
 - статус `✅ Обогащено` или ошибка в отдельном столбце.
 
+<img width="1412" height="278" alt="image" src="https://github.com/user-attachments/assets/0bb2995e-cd0a-49fc-8737-2d0e623db0f5" />
+
+
 ### 3.3 Python CLI report
 
 ![Python CLI Report](docs/screenshots/01-python-cli-report.png)
@@ -91,7 +95,8 @@ https://docs.google.com/spreadsheets/d/1QASAQQY7Jhy2rEpzxLtznm8Dr1LAavk_X6plF2HZ
 - итоговую оценку рациона;
 - таблицы КБЖУ, витаминов и минералов.
 
----
+<img width="820" height="963" alt="image" src="https://github.com/user-attachments/assets/1248d9bb-da77-4496-b33b-0761ed3d7927" />
+
 
 ## 4. Структура проекта
 
