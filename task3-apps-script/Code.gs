@@ -131,9 +131,9 @@ function enrichAllRows() {
  * Запрашивает API Open Food Facts и извлекает нутриенты продукта
  */
 function fetchProductFromAPI(productName) {
-  const url = 'https://world.openfoodfacts.org/cgi/search.pl?search_terms=' + 
-              encodeURIComponent(productName) + 
-              '&search_simple=1&action=process&json=1&page_size=1' +
+  const url = 'https://world.openfoodfacts.org/cgi/search.pl?search_terms=' +
+              encodeURIComponent(productName) +
+              '&search_simple=1&action=process&json=1&page_size=20' +
               '&fields=product_name,brands,nutriments,code';
 
   const options = {
@@ -176,7 +176,24 @@ function fetchProductFromAPI(productName) {
     return null;
   }
 
-  const product = json.products[0];
+  // Выбираем первый продукт, у которого реально заполнены нутриенты
+  // (первый результат поиска часто оказывается записью без данных о пищевой ценности)
+  let product = null;
+  for (let p = 0; p < json.products.length; p++) {
+    const cand = json.products[p].nutriments || {};
+    const hasCalories = parseFloat(cand['energy-kcal_100g']) > 0 || parseFloat(cand['energy_100g']) > 0;
+    const hasMacros = parseFloat(cand['proteins_100g']) > 0 || parseFloat(cand['carbohydrates_100g']) > 0;
+    if (hasCalories || hasMacros) {
+      product = json.products[p];
+      break;
+    }
+  }
+
+  // Если ни у одного кандидата нет данных — возвращаем "не найдено"
+  if (!product) {
+    return null;
+  }
+
   const nut = product.nutriments || {};
 
   // Форматируем структуру и конвертируем граммы в мг/мкг
