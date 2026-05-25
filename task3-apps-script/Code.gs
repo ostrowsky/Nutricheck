@@ -144,9 +144,31 @@ function fetchProductFromAPI(productName) {
     }
   };
 
-  const response = UrlFetchApp.fetch(url, options);
-  if (response.getResponseCode() !== 200) {
-    throw new Error('API вернул код ответа ' + response.getResponseCode());
+  // Ретраи с нарастающей задержкой: Open Food Facts часто отвечает 503/429 при троттлинге
+  const MAX_RETRIES = 3;
+  let response = null;
+  let lastCode = 0;
+
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    response = UrlFetchApp.fetch(url, options);
+    lastCode = response.getResponseCode();
+
+    if (lastCode === 200) {
+      break;
+    }
+    // Повторяем только при перегрузке/троттлинге сервера (5xx, 429)
+    if (lastCode === 503 || lastCode === 429 || lastCode >= 500) {
+      if (attempt < MAX_RETRIES) {
+        Utilities.sleep(1000 * attempt); // 1с, 2с — экспоненциальная задержка
+        continue;
+      }
+    }
+    // Прочие коды (4xx и т.п.) — не повторяем
+    break;
+  }
+
+  if (lastCode !== 200) {
+    throw new Error('API вернул код ответа ' + lastCode + ' (после ' + MAX_RETRIES + ' попыток)');
   }
 
   const json = JSON.parse(response.getContentText());
